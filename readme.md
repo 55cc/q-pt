@@ -3,7 +3,7 @@ q-pt
 
 #### 简介
 -------------------------
-基于 QuickJS Javascript 引擎,帮助您更简单的使用qjs运行js
+基于 QuickJS Javascript 引擎,帮助您更简单的使用QuickJS运行js
 
 功能:
 
