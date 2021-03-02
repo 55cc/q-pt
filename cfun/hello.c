@@ -1,4 +1,3 @@
-#include "quickjs.h"
 #include <stdio.h>
 
 #define export static

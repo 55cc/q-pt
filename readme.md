@@ -28,3 +28,28 @@ q-pt
 example: `./run.sh example.js`
 
 
+#### c functions 简化
+----
+对quick js 自带的拓展方式,做了简化,不用再写大量的胶水代码.
+
+简化后的代码:
+hello.c:
+```
+#include <stdio.h>
+
+#define export static
+// 使用export标记需要导出的函数
+export int hello(char *s)
+{
+  return printf("hello, %s\n", s);
+}
+
+```
+在js中使用:
+
+```
+// hello world
+import { hello } from "./clib/hello.so";
+hello("world");
+```
+更多样例见 cfun 目录 和 example.js
